@@ -144,9 +144,11 @@
 
     const lessThanTenConfig = {
         type: 'bar',
-        responsive: true,
         data: lessThanTenData,
         options: {
+            responsive: true,
+            maintainAspectRatio: false,
+
             tooltips: {
                 enabled: true
             },
@@ -215,7 +217,8 @@
         responsive: true,
         data: greaterThanTwentyData,
         options: {
-
+            responsive: true,
+            maintainAspectRatio: false,
             plugins: {
                 datalabels: {
                     anchor: 'end',
@@ -280,6 +283,8 @@
         responsive: true,
         data: greaterThanThirtyData,
         options: {
+            responsive: true,
+            maintainAspectRatio: false,
             plugins: {
                 legend: {
                     position: 'bottom'
@@ -314,26 +319,26 @@
             '<span class="fas fa-chevron-circle-left  nav-arrow-color"></span>', '<span class="fas fa-chevron-circle-right nav-arrow-color"></span>'
         ],
         responsive: {
-            0:{
-              items: 1,
-              nav: false,
-              dots: false,
-            
+            0: {
+                items: 1,
+                nav: false,
+                dots: false,
+
             },
-            480:{
-              items: 1,
-              nav: false,
-              dots: false,
-             
+            480: {
+                items: 1,
+                nav: false,
+                dots: false,
+
             },
-            769:{
-              items: 1
+            769: {
+                items: 1
             }
         }
     });
 
 
-   
+
 
 
 })(jQuery);
